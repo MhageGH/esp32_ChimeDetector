@@ -19,7 +19,7 @@ void IRAM_ATTR onTimer(){
 void setup() {
   hw_timer_t* timer = timerBegin(0, 80, true);
   timerAttachInterrupt(timer, &onTimer, true);
-  timerAlarmWrite(timer, 23, true);
+  timerAlarmWrite(timer, 23, true); // sampling frequency 44.1kHz
   timerAlarmEnable(timer);
   Serial.begin(115200);
 }
@@ -36,7 +36,9 @@ void loop() {
   FFT.Windowing(vReal, numSample, FFT_WIN_TYP_HAMMING, FFT_FORWARD);
   FFT.Compute(vReal, vImag, numSample, FFT_FORWARD);
   FFT.ComplexToMagnitude(vReal, vImag, numSample);
-  int i_max = 15;
+  
+  // sound detect condition: frequency 690~782Hz, 200ms continuous
+  int i_max = 15; 
   for (int i = 15; i <= 17; ++i) if (vReal[i] > vReal[i_max]) i_max = i;
   static int detectCount = 0;
   if (vReal[i_max] > 1500) ++detectCount;
