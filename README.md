@@ -11,8 +11,11 @@
 ## Development Environment and library
 - [Arduino IDE](https://www.arduino.cc/en/main/software)
 - [arduino-esp32](https://github.com/espressif/arduino-esp32)
-- [arduinoFFT](https://github.com/kosme/arduinoFFT)
+
 - [Visual Studio](https://www.microsoft.com/ja-jp/dev/default.aspx)
+
+## Library
+- [arduinoFFT](https://github.com/kosme/arduinoFFT)
 
 ## How to use
 You connect esp32_ChimeDetector to PC and start ChimeDetector.exe on PC.
