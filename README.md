@@ -8,11 +8,9 @@
 ## Wiring
 ![wiring1](doc/wiring1.png)
 
-## Development Environment and library
+## Development Environment
 - [Arduino IDE](https://www.arduino.cc/en/main/software)
 - [arduino-esp32](https://github.com/espressif/arduino-esp32)
-
-- [Visual Studio](https://www.microsoft.com/ja-jp/dev/default.aspx)
 
 ## Library
 - [arduinoFFT](https://github.com/kosme/arduinoFFT)
@@ -24,7 +22,7 @@ When your chime rings, you are inform by alert with a sound.
 ![alert](doc/alert.jpg)
 
 ## About ChimeDetector.exe
-You can make it by Visual Studio easily.
+You can make it by [Visual Studio](https://www.microsoft.com/ja-jp/dev/default.aspx) easily.
 1. Make a project with template for Visual C# Windows Form Application.
 2. Add "SerialPort" and "Label" to Form Designer. Reshape them and set port name appropriately.
 3. Double click "DataReceived" event of "SerialPort", and write as Form1Example.cs. Put wav file for alert sound.
