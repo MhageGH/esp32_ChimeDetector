@@ -20,7 +20,7 @@ You connect esp32_ChimeDetector to PC and start ChimeDetector.exe on PC.
 When your chime rings, an alert with sound informs you.
 You can use noise cancelling headphones safely during waiting home delivery.
 
-![alert](doc/alert.jpg)　![head_phone](doc/head_phone.png)
+![alert](doc/alert.jpg)　![head_phone1](doc/head_phone1.png)
 
 ## About ChimeDetector.exe
 You can make it by [Visual Studio](https://www.microsoft.com/ja-jp/dev/default.aspx) easily.
